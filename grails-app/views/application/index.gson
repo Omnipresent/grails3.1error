@@ -1,0 +1,8 @@
+import try3.api.Author
+
+model {
+    Author author
+}
+json g.render(author, [includes:['name', 'id']]) {
+    pages 100
+}
